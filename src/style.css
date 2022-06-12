@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html[data-theme="light"]{
+--clr-btn:#49a6e9;
+--clr-btn1:hsl(205, 86%, 81%);
+--clr-white:#ffffff;
+--radius:0.5rem;
+--clr-text:black;
+--transition: all 0.3s linear;
+
+}
+html[data-theme="dark"]{
+    --clr-btn:hsl(390,95%,75%);
+    --clr-btn1:#ea80fc;
+    --clr-white:black;
+    --clr-text:#ea80fc;
+    --radius:0.5rem;
+    --transition: all 0.3s linear;
+    }
+.App {
+  text-align: center;
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: var(--clr-white);
+  color:var(--clr-text);
+}
+form{
+    display: flex;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+#input{
+  padding: 0.25rem;
+    padding-left: 1rem;
+    background: var(--clr-grey-10);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-color: transparent;
+    font-size: 1rem;
+    width: 100%;
+    color:var(--clr-text);
+}
+
+
+.submit-btn{
+    background: var(--clr-btn1);
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    cursor: pointer;
+    content: var(--clr-btn);
+    transition: var(--transition);
+    font-size: 0.85rem;
+}
+.submit-btn:hover{
+    background: var(--clr-btn);
+    color: var(--clr-white);
+    
+}
+.empty-img{
+    width:50%;
+    
+}
+.tasks{
+    list-style: none;
+    width: 50%;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.task .text{
+    font-size:30px;
+}
+.remove-btn{
+    border-color: transparent;
+    background-color: transparent;
+    font-size:30px;
+    color:#e74c3c;
+    cursor: pointer;
+}
+textarea{
+    color:var(--clr-text)
+}
+
+.done-btn{
+    border-color: transparent;
+    background-color: transparent;
+    margin-right: 5px;
+    font-size:30px;
+    color:#57d15a;
+    cursor: pointer;
+}
+.done-btn:hover{
+    color:var(--clr-btn);
+}
+.remove-btn:hover{
+    color:var(--clr-btn);
+}
+.hero{
+    color:var(--clr-text);
+}
